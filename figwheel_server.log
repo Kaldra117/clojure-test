@@ -1,0 +1,1149 @@
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.721 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.669 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.692 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.688 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.655 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:69  column:44  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Heads or Tails?"]
+  68            [:button {:on-click (fn reset-click [e]         
+  69                            (if (== (get-in @app-state [:fill-number]) 1)
+                                                 ^--- Use of undeclared Var cointoss.core/app-state
+  70                              (do
+  71                                (swap! app-state update-in [:fill-number]
+  72                                       dec)
+  73                                (swap! app-state assoc-in [:text]
+  74                                       (str "Back to " color1 "!")))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:71  column:38  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  67  [:h1 "Heads or Tails?"]
+  68  [:button {:on-click (fn reset-click [e]         
+  69                  (if (== (get-in @app-state [:fill-number]) 1)
+  70                    (do
+  71                      (swap! app-state update-in [:fill-number]
+                                 ^--- Use of undeclared Var cointoss.core/app-state
+  72                             dec)
+  73                      (swap! app-state assoc-in [:text]
+  74                             (str "Back to " color1 "!")))
+  75                    (println "Not one")
+  76                    ))}
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:73  column:38  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  69                       (if (== (get-in @app-state [:fill-number]) 1)
+  70                         (do
+  71                           (swap! app-state update-in [:fill-number]
+  72                                  dec)
+  73                           (swap! app-state assoc-in [:text]
+                                      ^--- Use of undeclared Var cointoss.core/app-state
+  74                                  (str "Back to " color1 "!")))
+  75                         (println "Not one")
+  76                         ))}
+  77  (str "Reset to color " color1)]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:74  column:54  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  70                         (do
+  71                           (swap! app-state update-in [:fill-number]
+  72                                  dec)
+  73                           (swap! app-state assoc-in [:text]
+  74                                  (str "Back to " color1 "!")))
+                                                      ^--- Use of undeclared Var cointoss.core/color1
+  75                         (println "Not one")
+  76                         ))}
+  77  (str "Reset to color " color1)]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:77  column:29  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  73                                (swap! app-state assoc-in [:text]
+  74                                       (str "Back to " color1 "!")))
+  75                              (println "Not one")
+  76                              ))}
+  77       (str "Reset to color " color1)]]))
+                                  ^--- Use of undeclared Var cointoss.core/color1
+  78  
+  79  
+  80  ;; -------------------------
+  81  ;; Translate routes -> page components
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.802 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.694 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:69  column:34  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Heads or Tails?"]
+  68            [:button {:on-click (fn reset-click [e] )}
+  69            (str "Reset to color " color1)]]))
+                                       ^--- Use of undeclared Var cointoss.core/color1
+  70  
+  71  
+  72  ;; -------------------------
+  73  ;; Translate routes -> page components
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.668 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.695 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.661 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.683 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.403 seconds.
+----  Could not Analyze  src/cljs/cointoss/core.cljs   line:73  column:4  ----
+
+  Wrong number of args to var at line 73 src\cljs\cointoss\core.cljs
+
+  72  (defn flip-coin []
+  73  			(var result = rand-int 2))
+         ^--- Wrong number of args to var at line 73 src\cljs\cointoss\core.cljs
+  74  ;; -------------------------
+  75  ;; Translate routes -> page components
+
+----  Analysis Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.38 seconds.
+----  Could not Analyze  src/cljs/cointoss/core.cljs   line:73  column:4  ----
+
+  Wrong number of args to var at line 73 src\cljs\cointoss\core.cljs
+
+  72  (defn flip-coin [result]
+  73  			(var result = rand-int 2))
+         ^--- Wrong number of args to var at line 73 src\cljs\cointoss\core.cljs
+  74  ;; -------------------------
+  75  ;; Translate routes -> page components
+
+----  Analysis Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:71  column:10  ----
+
+  Use of undeclared Var cointoss.core/result
+
+  67            [:h1 "Heads or Tails?"]
+  68            [:button {:on-click (fn reset-click [e] )}
+  69            	(str "Flip the coin")]
+  70           ]))
+  71  (def var result)
+               ^--- Use of undeclared Var cointoss.core/result
+  72  
+  73  (defn flip-coin [result]
+  74  			(result = rand-int 2))
+  75  ;; -------------------------
+  76  ;; Translate routes -> page components
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.703 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.677 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:67  column:35  ----
+
+  Use of undeclared Var cointoss.core/results
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Heads or Tails? " results""]
+                                        ^--- Use of undeclared Var cointoss.core/results
+  68            [:button {:on-click (fn reset-click [e] )}
+  69            	(str "Flip the coin")]
+  70           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.743 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.674 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:67  column:12  ----
+
+  Use of undeclared Var cointoss.core/if
+
+  63  (def results 0)
+  64  
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [if results > 0
+                 ^--- Use of undeclared Var cointoss.core/if
+  68            (:h1 "Heads or Tails? " results"")
+  69            (:h1 "not " results"")]
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:68  column:11  ----
+
+  Wrong number of args (3) passed to :h1
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [if results > 0
+  68            (:h1 "Heads or Tails? " results"")
+                ^--- Wrong number of args (3) passed to :h1
+  69            (:h1 "not " results"")]
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:69  column:11  ----
+
+  Wrong number of args (3) passed to :h1
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [if results > 0
+  68            (:h1 "Heads or Tails? " results"")
+  69            (:h1 "not " results"")]
+                ^--- Wrong number of args (3) passed to :h1
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.754 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:67  column:12  ----
+
+  Use of undeclared Var cointoss.core/If
+
+  63  (def results 0)
+  64  
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [If results > 0
+                 ^--- Use of undeclared Var cointoss.core/If
+  68            (:h1 "Heads or Tails? " results"")
+  69            (:h1 "not " results"")]
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:68  column:11  ----
+
+  Wrong number of args (3) passed to :h1
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [If results > 0
+  68            (:h1 "Heads or Tails? " results"")
+                ^--- Wrong number of args (3) passed to :h1
+  69            (:h1 "not " results"")]
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:69  column:11  ----
+
+  Wrong number of args (3) passed to :h1
+
+  65  (defn coin-page []
+  66    (fn [] [:span.main
+  67            [If results > 0
+  68            (:h1 "Heads or Tails? " results"")
+  69            (:h1 "not " results"")]
+                ^--- Wrong number of args (3) passed to :h1
+  70            [:button {:on-click (fn reset-click [e] )}
+  71            	(str "Flip the coin")]
+  72           ]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.691 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.67 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.396 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:146 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 146, col 1] Unexpected EOF while reading item 10 of vector, starting at line 69 and column 11.
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.396 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:146 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 146, col 1] Unexpected EOF while reading item 10 of vector, starting at line 69 and column 11.
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:75  column:54  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  71  (do
+  72    (swap! app-state update-in [:fill-number]
+  73           dec)
+  74    (swap! app-state assoc-in [:text]
+  75           (str "Back to " color1 "!")))
+                               ^--- Use of undeclared Var cointoss.core/color1
+  76  (println "Not one")
+  77  ))}]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.706 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.626 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.677 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:75  column:54  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  71                    (do
+  72                      (swap! app-state update-in [:fill-number]
+  73                             dec)
+  74                      (swap! app-state assoc-in [:text]
+  75                             (str "Back to " color1 "!")))
+                                                 ^--- Use of undeclared Var cointoss.core/color1
+  76                    (println "Not one")
+  77                    ))}]
+  78  (str "Flip Coin")]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.744 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.693 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.637 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.69 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.674 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.653 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.639 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.682 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.651 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.672 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:27  ----
+
+  Use of undeclared Var cointoss.core/flip-coin
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            																flip-coin []        
+                                ^--- Use of undeclared Var cointoss.core/flip-coin
+  71                            (if (zero? (get-in @app-state [:fill-number]))
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:92  column:54  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  88                         (do
+  89                           (swap! app-state update-in [:fill-number]
+  90                                  dec)
+  91                           (swap! app-state assoc-in [:text]
+  92                                  (str "Back to " color1 "!")))
+                                                      ^--- Use of undeclared Var cointoss.core/color1
+  93                         (println "Not one")
+  94                         ))}
+  95  (str "Reset to color " color1)]]
+  96  )
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:95  column:29  ----
+
+  Use of undeclared Var cointoss.core/color1
+
+  91                           (swap! app-state assoc-in [:text]
+  92                                  (str "Back to " color1 "!")))
+  93                         (println "Not one")
+  94                         ))}
+  95  (str "Reset to color " color1)]]
+                             ^--- Use of undeclared Var cointoss.core/color1
+  96  )
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.763 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:27  ----
+
+  Use of undeclared Var cointoss.core/flip-coin
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            																flip-coin []        
+                                ^--- Use of undeclared Var cointoss.core/flip-coin
+  71                            (if (zero? (get-in @app-state [:fill-number]))
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.639 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.661 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.619 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.646 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.68 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.616 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:27  ----
+
+  Use of undeclared Var cointoss.core/flip-coin
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            																flip-coin []        
+                                ^--- Use of undeclared Var cointoss.core/flip-coin
+  71                            (if (zero? (get-in @app-state [:fill-number]))
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.646 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:27  ----
+
+  Use of undeclared Var cointoss.core/flip-coin
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            																flip-coin []        
+                                ^--- Use of undeclared Var cointoss.core/flip-coin
+  71                            (if (zero? (get-in @app-state [:fill-number]))
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.087 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:27  ----
+
+  Use of undeclared Var cointoss.core/flip-coin
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            																flip-coin []        
+                                ^--- Use of undeclared Var cointoss.core/flip-coin
+  71                            (if (zero? (get-in @app-state [:fill-number]))
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.727 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.671 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.668 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.64 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.658 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.675 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.671 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:71  column:31  ----
+
+  Wrong number of args (2) passed to cljs.core/rand-int
+
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70  
+  71                            (if (rand-int 2 (get-in @app-state [:fill-number]))
+                                    ^--- Wrong number of args (2) passed to cljs.core/rand-int
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+  76                                       (str "Heads")))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.697 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:71  column:31  ----
+
+  Wrong number of args (2) passed to cljs.core/rand-int
+
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70  
+  71                            (if (rand-int 2 (get-in @app-state [:fill-number]))
+                                    ^--- Wrong number of args (2) passed to cljs.core/rand-int
+  72                              (do
+  73                                (swap! app-state update-in [:fill-number]
+  74                                       dec)
+  75                                (swap! app-state assoc-in [:text]
+  76                                       (str "Heads")))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.661 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.657 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.687 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.626 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.654 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.652 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.632 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.658 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.366 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:70 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 70, col 43] Unmatched delimiter ].
+
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            	let ([:fill-number] rand-int 2]
+                C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 70, col 43] Unmatched delimiter ].
+  71  
+  72                            (if (zero? (get-in @app-state [:fill-number]))
+  73                              (do
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:70  column:12  ----
+
+  Can't take value of macro cljs.core/let
+
+  66  (defn coin-page []
+  67    (fn [] [:span.main
+  68            [:h1 (:text @app-state)]
+  69            [:button {:on-click (fn reset-click [e]
+  70            	let ([:fill-number] rand-int 2)
+                 ^--- Can't take value of macro cljs.core/let
+  71  
+  72                            (if (zero? (get-in @app-state [:fill-number]))
+  73                              (do
+  74                                (swap! app-state update-in [:fill-number]
+  75                                       dec)
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.675 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.399 seconds.
+----  Could not Compile  src/cljs/cointoss/core.cljs  ----
+
+  failed compiling file:src\cljs\cointoss\core.cljs
+
+----  Compiler Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.385 seconds.
+----  Could not Compile  src/cljs/cointoss/core.cljs  ----
+
+  failed compiling file:src\cljs\cointoss\core.cljs
+
+----  Compiler Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.652 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.715 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.707 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:83  column:28  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  79                         (str "Tails"))))	
+  80                  
+  81                       )
+  82                    ))}
+  83  (str "Flip Coin "flip"")
+                       ^--- Use of undeclared Var cointoss.core/flip
+  84  ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.71 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:88  column:28  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  84                         (str "Tails"))))	
+  85                  
+  86                       )
+  87                    ))}
+  88  (str "Flip Coin "flip"")
+                       ^--- Use of undeclared Var cointoss.core/flip
+  89  ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.723 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:88  column:28  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  84                         (str "Tails"))))	
+  85                  
+  86                       )
+  87                    ))}
+  88  (str "Flip Coin "flip"")
+                       ^--- Use of undeclared Var cointoss.core/flip
+  89  ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.687 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:89  column:28  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  85                         (str "Tails"))))	
+  86                  
+  87                       )
+  88                    ))}
+  89  (str "Flip Coin "flip"")
+                       ^--- Use of undeclared Var cointoss.core/flip
+  90  ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.695 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.632 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.661 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.675 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:67  column:24  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  63            [:h1 "About cointoss"]]))
+  64  
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 (:text @app-state)]
+                             ^--- Use of undeclared Var cointoss.core/app-state
+  68            [:button {:on-click (fn reset-click [e]
+  69              (let [flip (rand-int 2)]
+  70      											(if (= flip 0) 
+  71      														((swap! app-state update-in [:fill-number]
+  72                                       dec)
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:71  column:27  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  67  [:h1 (:text @app-state)]
+  68  [:button {:on-click (fn reset-click [e]
+  69    (let [flip (rand-int 2)]
+  70  					(if (= flip 0) 
+  71  								((swap! app-state update-in [:fill-number]
+                      ^--- Use of undeclared Var cointoss.core/app-state
+  72                             dec)
+  73          (swap! app-state assoc-in [:text]
+  74                             (str "Heads")) 
+  75  								((swap! app-state update-in [:fill-number]
+  76                         inc)
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:73  column:26  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  69  (let [flip (rand-int 2)]
+  70  			(if (= flip 0) 
+  71  						((swap! app-state update-in [:fill-number]
+  72                           dec)
+  73        (swap! app-state assoc-in [:text]
+                   ^--- Use of undeclared Var cointoss.core/app-state
+  74                           (str "Heads")) 
+  75  						((swap! app-state update-in [:fill-number]
+  76                       inc)
+  77        (swap! app-state assoc-in [:text]
+  78                       (str "Tails"))))	
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:75  column:27  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  71  ((swap! app-state update-in [:fill-number]
+  72                     dec)
+  73  (swap! app-state assoc-in [:text]
+  74                     (str "Heads")) 
+  75  ((swap! app-state update-in [:fill-number]
+              ^--- Use of undeclared Var cointoss.core/app-state
+  76                 inc)
+  77  (swap! app-state assoc-in [:text]
+  78                 (str "Tails"))))	
+  79          
+  80               )
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:77  column:26  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  73          (swap! app-state assoc-in [:text]
+  74                             (str "Heads")) 
+  75  								((swap! app-state update-in [:fill-number]
+  76                         inc)
+  77          (swap! app-state assoc-in [:text]
+                     ^--- Use of undeclared Var cointoss.core/app-state
+  78                         (str "Tails"))))	
+  79                  
+  80                       )
+  81                    ))}
+  82  (str "Flip Coin")
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.753 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.681 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:91  column:20  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  88                       )
+  89                    ))}
+  90  (str "Flip Coin")
+  91  (println flip)
+               ^--- Use of undeclared Var cointoss.core/flip
+  92  ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.666 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.669 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.68 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.662 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.671 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.667 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.636 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.687 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.392 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:89 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 89, col 31] Unmatched delimiter ).
+
+  87            (println "flip is" flip)
+  88            (println "fill number is" [:fill-number])
+  89                              ))}
+                                  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 89, col 31] Unmatched delimiter ).
+  90            (str "Flip Coin")
+  91  
+  92            ]]))
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:87  column:30  ----
+
+  Use of undeclared Var cointoss.core/flip
+
+  83                    (swap! app-state assoc-in [:text]
+  84                                   (str "Tails")))
+  85                            
+  86                                 )
+  87            (println "flip is" flip)
+                                   ^--- Use of undeclared Var cointoss.core/flip
+  88            (println "fill number is" [:fill-number])
+  89                              )}
+  90            (str "Flip Coin")
+  91  
+  92            ]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.671 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.615 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.64 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.621 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.627 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.651 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.595 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.643 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.678 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.611 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.374 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:68 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 68, col 12] Unmatched delimiter ).
+
+  66    (fn [] [:span.main
+  67            [:h1 "Number" [:fill-number]]
+  68            ))
+                C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 68, col 12] Unmatched delimiter ).
+  69  
+  70  (def results 0)
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:68  column:31  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+  68            [:h2 (:fill-number @app-state)]]))
+                                    ^--- Use of undeclared Var cointoss.core/app-state
+  69  
+  70  (def results 0)
+  71  
+  72  (defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.694 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:68  column:31  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+  68            [:h2 (:fill-number @app-state)]]))
+                                    ^--- Use of undeclared Var cointoss.core/app-state
+  69  
+  70  (def results 0)
+  71  
+  72  (defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.624 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:64  column:1  ----
+
+  Can't take value of macro cljs.core/defonce
+
+  61  (defn about-page []
+  62    (fn [] [:span.main
+  63            [:h1 "About cointoss"]]))
+  64  defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+      ^--- Can't take value of macro cljs.core/defonce
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+  68            [:h2 (:fill-number @app-state)]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:64  column:9  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  61  (defn about-page []
+  62    (fn [] [:span.main
+  63            [:h1 "About cointoss"]]))
+  64  defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+              ^--- Use of undeclared Var cointoss.core/app-state
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+  68            [:h2 (:fill-number @app-state)]]))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.41 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:64 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 64, col 66] Unmatched delimiter ).
+
+  62    (fn [] [:span.main
+  63            [:h1 "About cointoss"]]))
+  64  defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+      C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 64, col 66] Unmatched delimiter ).
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:68  column:31  ----
+
+  Use of undeclared Var cointoss.core/app-state
+
+  65  (defn counting-page []
+  66    (fn [] [:span.main
+  67            [:h1 "Number" ]
+  68            [:h2 (:fill-number @app-state)]]))
+                                    ^--- Use of undeclared Var cointoss.core/app-state
+  69  
+  70  (def results 0)
+  71  
+  72  (defonce app-state (atom {:text "Heads or Tails" :fill-number 0}))
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.653 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.664 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.67 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.591 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.656 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.645 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.373 seconds.
+----  Could not Read  src/cljs/cointoss/core.cljs   line:178 ----
+
+  C:\Users\Kevin Garvis\cointoss\src\cljs\cointoss\core.cljs [line 178, col 1] Unexpected EOF while reading item 15 of vector, starting at line 68 and column 10.
+
+----  Reader Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.629 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.654 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.366 seconds.
+----  Could not Analyze  src/cljs/cointoss/core.cljs   line:100  column:3  ----
+
+  Unable to resolve var: items-page in this context at line 100 src\cljs\cointoss\core.cljs
+
+   99  (defn page-for [route]
+  100    (case route
+         ^--- Unable to resolve var: items-page in this context at line 100 src\cljs\cointoss\core.cljs
+  101      :index #'home-page
+  102      :about #'about-page
+  103      :items #'items-page
+
+----  Analysis Error : Please see src/cljs/cointoss/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.661 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.636 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.594 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.595 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.638 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.597 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/cointoss/core.cljs   line:50  column:13  ----
+
+  Use of undeclared Var cointoss.core/swap!app-state
+
+  46    (fn [] [:span.main
+  47            [:h1 "Number" ]
+  48            [:h2 (:fill-number @app-state)]
+  49            [:button {:on-click (fn count-click [e]
+  50            	(swap!app-state update-in [:fill-number]inc))}
+                  ^--- Use of undeclared Var cointoss.core/swap!app-state
+  51            (str "Start Counting")]]))
+  52  
+  53  (def results 0)
+
+----  Compiler Warning : Please see src/cljs/cointoss/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.655 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.602 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.646 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.606 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.647 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.635 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.599 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.626 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.755 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\cointoss\core.js
