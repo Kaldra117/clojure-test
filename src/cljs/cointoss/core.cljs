@@ -83,17 +83,6 @@
 
 
 
-(def heads \H)
-(def tails \T)
- 
-(defn flip-coin []
-  (let [flip (rand-int 2)]
-    (if (= flip 0) heads tails)))
- 
-(defn turn [coin]
-  (if (= coin heads) tails heads))
-
-
 
 ;; -------------------------
 ;; Translate routes -> page components
