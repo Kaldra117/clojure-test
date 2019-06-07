@@ -55,7 +55,6 @@
 
           ]))
 
-(def results 0)
 
 
 
@@ -71,14 +70,8 @@
     														
                   (swap! app-state assoc-in [:text]
                                  (str "Tails")))
-                          
-                               
-          (println "flip is" flip))
-          (println "fill number is" [:fill-number])
-                            )}
-          (str "Flip Coin")
-
-          ]]))
+    											))}
+          (str "Flip Coin")]]))
 
 
 
